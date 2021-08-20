@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulsmith</title>
+    <script src="data.js"></script>
+    <script src="functions.js"></script>
+    <script src="common.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body onload="onload()">
+    <div class="topPanel">
+        <div class="fitDivs"><img src="./glyphs/coin.png" class="smallImg noColour"> <div id="coin" class="howMany"></div></div>
+        <div class="fitDivs"><img src="./glyphs/jerkUnassigned.png" class="smallImg"> <div id="jerks" class="howMany"></div></div>
+    </div>
+    <div class="tabPanel">
+        <div class="tabs">
+            <div id="exchange" class="tab"><img src="./glyphs/exchange.png" class="medImg silhouette"></div>
+            <div id="mine" class="tab"><img src="./glyphs/pickaxe.png" class="medImg silhouette"></div>
+            <div id="smelt" class="tab"><img src="./glyphs/tongs.png" class="medImg silhouette"></div>
+            <div id="smith" class="tab"><img src="./glyphs/hammer.png" class="medImg silhouette"></div>
+            <div id="occult" class="tab"><img src="./glyphs/occult.png" class="medImg silhouette"></div>
+            <div id="eldritch" class="tab"><img src="./glyphs/eldritch.png" class="medImg silhouette"></div>
+            <div id="oldone" class="tab"><img src="./glyphs/oldone.png" class="medImg silhouette"></div>
+        </div>
+        <div class="tabContainer">
+            <div id="exchangeContents" class="tabContents noDisplay">
+                <div class="thirdWidth">
+                    <table>
+                        <tr>
+                            <td><img src="./glyphs/unassigned.png" class="tinyImg noColour"></td>
+                            <td><img src="./glyphs/buy.png" class="tinyImg noColour"></td>
+                            <td><img src="./glyphs/sell.png" class="tinyImg noColour"></td>
+                            <td><img src="./glyphs/coin.png" class="tinyImg noColour"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./glyphs/coalOre.png" class="tinyImg noColour glow"></td>
+                            <td><img src="./glyphs/plus.png" class="tinyImg pointer noColour"></td>
+                            <td><img src="./glyphs/minus.png" class="tinyImg pointer noColour"></td>
+                            <td class="smallText">55</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./glyphs/copperOre.png" class="tinyImg noColour glow"></td>
+                            <td><img src="./glyphs/plus.png" class="tinyImg pointer noColour"></td>
+                            <td><img src="./glyphs/minus.png" class="tinyImg pointer noColour"></td>
+                            <td class="smallText">511</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="mineContents" class="tabContents noDisplay"></div>
+            <div id="smeltContents" class="tabContents noDisplay"></div>
+            <div id="smithContents" class="tabContents noDisplay">
+                <div class="lighterPanel" id="craftStuffs">
+                    <div class="relative inlineFlex rem1Margin"><div class="dagger rem3 tinFilter"></div><div class="daggerMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="sword rem3 copperFilter"></div><div class="swordMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="axe rem3 adamantineFilter"></div><div class="axeMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="mace rem3 leadFilter"></div><div class="maceMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="shield rem3 ironFilter"></div><div class="shieldMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="sword rem3 mithrilFilter"></div><div class="swordMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="helm rem3 steelFilter"></div><div class="helmMono rem3 absolute"></div></div>
+                    <div class="relative inlineFlex rem1Margin"><div class="breastplate rem3 bronzeFilter"></div><div class="breastplateMono rem3 absolute"></div></div>
+                    <!-- <img src="./glyphs/DaggerMono.png" class="medImg"> -->
+                </div>
+            </div>
+            <div id="occultContents" class="tabContents noDisplay">30</div>
+            <div id="eldritchContents" class="tabContents noDisplay">4</div>
+            <div id="oldoneContents" class="tabContents noDisplay">5</div>
+        </div>
+    </div>
+</body>
+</html>
